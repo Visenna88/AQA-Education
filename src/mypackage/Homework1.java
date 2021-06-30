@@ -56,7 +56,7 @@ public class Homework1 {
 
         System.out.println();
         System.out.println("Задание 3");
-        
+
         int a3 = 15;
         int b3 = 19;
         int c3 = 13;
