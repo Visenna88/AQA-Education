@@ -128,6 +128,7 @@ public class Homework1 {
 
         for (int i = 1; i <= n; i++) {
             f = f*i;
+
         }
         System.out.println("Факториал 4 - " + f);
         System.out.println();
@@ -151,7 +152,7 @@ public class Homework1 {
         System.out.println(factorial);
         System.out.println();
         System.out.println("Задание 4");
-
+        System.out.println();
         int count2 = 1; //счетчик, сколько раз число умножится на само себя
         int x = 2; //целое натуральное число
         int n3 = 3; //степень
