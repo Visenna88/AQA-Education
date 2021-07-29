@@ -9,5 +9,7 @@ public class Part3Task6 {
             arr6[i] = (int) ((Math.random() * 1000) + 1);
         }
         System.out.println("Массив, заполненный случайными числами: " + Arrays.toString(arr6));
+        
+
     }
 }
