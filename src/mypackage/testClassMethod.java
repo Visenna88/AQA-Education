@@ -11,11 +11,10 @@ public class testClassMethod {
 
     }
 
-    static int getMultiple (int x, int y){
+    static void getMultiple (int x, int y){
         int multiple1;
         multiple1 = x*y;
-        return multiple1;
-
+        System.out.println("Multiple is: "+ multiple1);
     }
 
     static void sayHello(String name) {
