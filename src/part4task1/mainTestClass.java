@@ -1,4 +1,4 @@
-package mypackage;
+package part4task1;
 
 public class mainTestClass {
     public static void main(String[] args) {
