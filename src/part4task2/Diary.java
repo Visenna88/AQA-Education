@@ -9,29 +9,15 @@ import java.util.Scanner;
 public class Diary {
     public static void main(String[] args) {
         // Сисок с именами
-        List<String> nameList = new ArrayList<>(Arrays.asList("Pete", "Mike", "Jane"));
+        ArrayList<String> nameList = new ArrayList<>(Arrays.asList("Pete", "Mike", "Jane"));
 
 
         // Список с отценками по математике
-        List<String> subjectList = new ArrayList<>(Arrays.asList("Math", "Physics", "PE", "Literature"));
-        List<Integer> mathPete = new ArrayList<Integer>(Arrays.asList(3, 4, 5, 3, 4, 2));
-        List<Integer> mathMike = new ArrayList<Integer>(Arrays.asList(5, 5, 5, 5, 4, 5));
-        List<Integer> mathJane = new ArrayList<Integer>(Arrays.asList(2, 3, 2, 4, 2, 2));
+        ArrayList<String> subjectList = new ArrayList<>(Arrays.asList("Math", "Physics", "PE", "Literature"));
+        ArrayList<Integer> mathPete = new ArrayList<>(Arrays.asList(3, 4, 5, 3, 4, 2));
+        ArrayList<Integer> mathMike = new ArrayList<>(Arrays.asList(5, 5, 5, 5, 4, 5));
+        ArrayList<Integer> mathJane = new ArrayList<>(Arrays.asList(2, 3, 2, 4, 2, 2));
 
-        //списки с оценками по физике
-        List<Integer> physicsPete = new ArrayList<Integer>(Arrays.asList(3, 4, 5, 3, 4, 2));
-        List<Integer> physicsMike = new ArrayList<Integer>(Arrays.asList(5, 5, 5, 5, 4, 5));
-        List<Integer> physicsJane = new ArrayList<Integer>(Arrays.asList(2, 3, 2, 4, 2, 2));
-
-        //сиски с оценками по физре
-        List<Integer> pePete = new ArrayList<Integer>(Arrays.asList(3, 4, 5, 3, 4, 2));
-        List<Integer> peMike = new ArrayList<Integer>(Arrays.asList(5, 5, 5, 5, 4, 5));
-        List<Integer> peJane = new ArrayList<Integer>(Arrays.asList(2, 3, 2, 4, 2, 2));
-
-        //списки с оценками по литературе
-        List<Integer> literaturePete = new ArrayList<Integer>(Arrays.asList(3, 4, 5, 3, 4, 2));
-        List<Integer> literatureMike = new ArrayList<Integer>(Arrays.asList(5, 5, 5, 5, 4, 5));
-        List<Integer> literatureJane = new ArrayList<Integer>(Arrays.asList(2, 3, 2, 4, 2, 2));
 
         Scanner in = new Scanner(System.in);
 
