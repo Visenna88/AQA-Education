@@ -1,10 +1,7 @@
 package part4task2;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Diary {
     public static void main(String[] args) {
@@ -24,28 +21,45 @@ public class Diary {
         //запрос имени
         System.out.print("Input a name of the student: ");
         String name = in.nextLine();
+        boolean nameCheck = nameList.contains(name);
 
-        if(nameList.contains(name)){
-            if (name == "Pete") {
+        if(nameCheck){
+            if (name.equals("Pete")) {
                 System.out.println("Enter the subject: Math, Physics, PE, Literature");
                 String subject = in.nextLine();
                 switch (subject) {
                     case "Math":
-                    System.out.print("Choose from the following options: " +
-                                "1 - add the marks, " +
-                                "2 - show the max mark, " +
-                                "3 - show the min mark " +
-                                "4 - show the average mark" +
-                                "5 - show the average minimum mark for all subjects" +
-                                "6 - show the average maximum mark for all subjects");
+                    System.out.print("Choose from the following options: ");
+                        System.out.println("  1 - add the marks");
+                        System.out.println("  2 - show the max mark");
+                        System.out.println("  3 - show the min mark ");
+                        System.out.println("  4 - show the average mark");
+                        System.out.println("  5 - show the average minimum mark for all subjects");
+                        System.out.println("  6 - show the average maximum mark for all subjects");
                     int selectionM = in.nextInt();
                         switch (selectionM) {
                             case 1:
                                 System.out.println("Add the mark: ");
                                 int mathPeteAdd = in.nextInt();
                                 mathPete.add(mathPeteAdd);
-                                System.out.println("The mark on Math for pete is added. The list of the marks is: " + mathPete);
+                                System.out.println("The mark on Math for pete is added. ");
+                                System.out.println("The list of the marks is: ");
+                                System.out.println(mathPete);
+                                break;
+                            case 2:
+                                System.out.println("The maximum mark in Math is: " + Collections.max(mathPete));
+                                break;
+                            case 3:
+                                System.out.println("The minimum mark in Math is: " + Collections.min(mathPete));
+                                break;
+                            case 4:
+                                break;
+                            case 5:
+                                break;
+                            case 6:
+                                break;
                         }
+                        break;
                     case "Physics":
                         System.out.print("Choose from the following options: " +
                                 "1 - add the marks, " +
