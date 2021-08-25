@@ -1,7 +1,9 @@
 package part4task2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Subject {
-    ArrayList<Integer> marks = new ArrayList<>();
+    String subName;
+    ArrayList<Integer> subGrade = new ArrayList<>();
 }
