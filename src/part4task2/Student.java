@@ -4,6 +4,7 @@ package part4task2;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+
 public class Student {
     String name;
     Map<String, Subject> diary = new LinkedHashMap<>();
@@ -15,7 +16,18 @@ public class Student {
         diary.put("Physics", new Subject("Physics"));
     }
 
-    public void addScore(String subjectName, int score) {
-        diary.get(subjectName).subGrade.add(score);
+    public void addScore(String subName, int score) {
+        diary.get(subName).subGrade.add(score);
     }
+
+    public int showScore(String subName, int score) {
+        int newScores = diary.get(subName).subGrade.get(0);
+        return newScores;
+    }
+
+
+
+
+
+
 }
