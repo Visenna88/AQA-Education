@@ -11,7 +11,7 @@ public class Dog {
 
     public void walk (){
         while (energy > 0) {
-            System.out.println("We are walking");
+            System.out.println("We are walking now");
             energy--;
         }
         System.out.println("I am tired");
